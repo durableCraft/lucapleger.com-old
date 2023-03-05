@@ -1,0 +1,131 @@
+.wikiwidget {
+    height: auto;
+    width: 420px;
+
+    background-color: white;
+    border-radius: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.75) 0 0 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.wiki_logo_wid {
+    height: 14px;
+    width: auto;
+    margin-top: 8px;
+    margin-left: 8px;
+    z-index: 2;
+}
+
+.wiki_logo_text {
+    font-size: 14px;
+    margin-top: 6px;
+    width: 200px;
+    color: black;
+    z-index: 2;
+}
+
+.inputcontainerWIKI {
+    height: 40px;
+    width: 404px;
+    margin: 8px;
+    margin-top: 0;
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px 10px;
+    border: solid 2px rgb(51, 102, 204);
+    z-index: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;
+}
+
+.inputfieldWIKI {
+    margin: 5px;
+    height: 30px;
+    width: calc(100% - 60px);
+    border-radius: 10px 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    color: black;
+    z-index: 2;
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+
+.inputfieldWIKI::placeholder {
+    color: rgb(118, 118, 118);
+    opacity: 1;
+}
+
+.wid_wiki_close {
+    height: 14px;
+    width: 14px;
+    margin: 8px;
+    margin-left: 176px;
+
+    background-color: rgb(255, 96, 90);
+    border: rgb(255, 96, 90);
+    border-radius: 100% 100%;
+    color: rgb(231, 184, 184);
+    user-select: none;
+    z-index: 2;
+}
+
+.wiki_search_btn {
+    height: 40px;
+    width: 50px;
+
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: rgb(51, 102, 204);
+    z-index: 2;
+
+    transition-duration: 200ms;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.wiki_search_btn:hover {
+    background-color: rgb(62, 119, 233);
+    cursor: pointer;
+}
+
+.wiki_magn_icon {
+    height: 20px;
+    width: auto;
+    z-index: 2;
+}
+
+.wiki_placeholder {
+    height: 200px;
+    width: 100%;
+    z-index: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.wiki_canvas {
+    position: absolute;
+    height: 280px;
+    width: 420px;
+
+    border-radius: 10px 10px;
+    z-index: 1;
+}
+
+.wiki_globe {
+    height: 140px;
+    width: auto;
+}

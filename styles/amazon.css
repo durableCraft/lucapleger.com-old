@@ -1,0 +1,168 @@
+.amazonwidget {
+    height: auto;
+    width: 529px;
+
+    background-color: rgb(234, 237, 237);
+    border-radius: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.75) 0 0 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.am_logo_wid {
+    height: 29px;
+    width: auto;
+    margin: 8px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.am_logo_search_bar {
+    height: auto;
+    width: 100%;
+
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    background-color: rgb(19, 25, 33);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.inputcontainerAM {
+    height: 35px;
+    width: 408px;
+    margin: 8px;
+    margin-left: 0;
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;
+}
+
+.inputfieldAM {
+    margin: 5px;
+    height: 25px;
+    width: calc(100% - 32px);
+    border-radius: 10px 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    color: black;
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+
+.inputfieldAM::placeholder {
+    color: rgb(118, 118, 118);
+    opacity: 1;
+}
+
+.am_button_bar {
+    height: 32px;
+    width: 100%;
+
+    background-color: rgb(35, 47, 62);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.am_links {
+    height: 22px;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px 5px;
+    border: 2px rgba(255, 255, 255, 0) solid;
+    transition-duration: 200ms;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.am_links:hover {
+    border: 2px white solid;
+}
+
+.wid_am_close {
+    height: 14px;
+    width: 14px;
+    margin: 10.5px;
+    margin-right: 8px;
+    margin-left: 0;
+
+    background-color: rgb(255, 96, 90);
+    border: rgb(255, 96, 90);
+    border-radius: 100% 100%;
+    color: rgb(231, 184, 184);
+    user-select: none;
+}
+
+.am_content {
+    height: 300px;
+    width: 100%;
+    border-bottom-left-radius: 8px 8px;
+    border-bottom-right-radius: 8px 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/prime_video_banner.jpg);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.inputcontainerPRIME {
+    height: 35px;
+    width: 513px;
+    margin: 8px;
+    background-color: rgba(252, 252, 252, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px;
+    border-radius: 10px 10px;
+    bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;
+}
+
+.inputfieldPRIME {
+    margin: 5px;
+    height: 25px;
+    width: calc(100% - 10px);
+    border-radius: 10px 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    color: black;
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+
+.inputfieldPRIME::placeholder {
+    color: rgb(118, 118, 118);
+    opacity: 1;
+}
+
+.prime_line {
+    height: 2px;
+    width: 75%;
+    margin: 10px;
+    background-color: rgb(173, 201, 233);
+}

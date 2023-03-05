@@ -1,0 +1,111 @@
+.instawidget {
+    height: auto;
+    width: 420px;
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.75) 0 0 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.inputcontainerIG {
+    margin: 8px;
+    margin-top: 0;
+    height: 40px;
+    width: 404px;
+    background-color: rgba(38, 38, 38, 255);
+    border-radius: 8px 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;
+}
+
+.inputfieldIG {
+    margin-left: 5px;
+    height: 30px;
+    width: 394px;
+    border-radius: 10px 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    color: white;
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+
+.inputfieldIG::placeholder {
+    color: rgba(143, 143, 143, 255);
+    opacity: 1;
+    font-weight: 700;
+}
+
+.wid_insta_close {
+    height: 14px;
+    width: 14px;
+    margin: 8px;
+    margin-left: 172px;
+
+    background-color: rgb(255, 96, 90);
+    border: rgb(255, 96, 90);
+    border-radius: 100% 100%;
+    color: rgb(231, 184, 184);
+    user-select: none;
+}
+
+.insta_logo_wid {
+    height: 17px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.ig_logo_btn_div {
+    height: auto;
+    width: 404px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: left;
+    user-select: none;
+}
+
+.widbutIG {
+    height: 40px;
+    width: 109px;
+    margin-right: 8px;
+
+    border: white solid 1px;
+    border-radius: 8px 8px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 15px;
+
+    transition-duration: 200ms;
+    user-select: none;
+}
+
+.widbutIG:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+button.widbutIGright {
+    margin-right: 0px;
+    width: 170px;
+}
+
+.insta_logo_text {
+    font-size: 14px;
+    margin-top: 8px;
+    width: 200px;
+}

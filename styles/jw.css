@@ -1,0 +1,211 @@
+.jwwidget {
+    height: auto;
+    width: 420px;
+
+    background-color: rgb(236, 234, 231);
+    border-radius: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.75) 0 0 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.jw_logo_wid {
+    height: 14px;
+    width: auto;
+    margin-top: 8px;
+    margin-left: 8px;
+    z-index: 2;
+}
+
+.jw_logo_text {
+    font-size: 14px;
+    margin-top: 7px;
+    z-index: 2;
+}
+
+.inputcontainerJW {
+    height: 40px;
+    width: 404px;
+    margin: 8px;
+    margin-top: 30px;
+    background-color: rgba(236, 234, 231, 0.85);
+    border-radius: 10px 10px;
+    border: solid 2px rgb(74, 109, 167);
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 15px;
+    z-index: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;
+}
+
+.inputfieldJW {
+    margin: 5px;
+    height: 30px;
+    width: calc(100% - 60px);
+    border-radius: 10px 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    color: black;
+    z-index: 2;
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+
+.inputfieldJW::placeholder {
+    color: rgb(118, 118, 118);
+    opacity: 1;
+}
+
+.wid_jw_close {
+    height: 14px;
+    width: 14px;
+    margin: 8px;
+    margin-left: 398px;
+
+    background-color: rgb(255, 96, 90);
+    border: rgb(255, 96, 90);
+    border-radius: 100% 100%;
+    color: rgb(231, 184, 184);
+    user-select: none;
+    z-index: 2;
+}
+
+.jw_search_btn {
+    height: 40px;
+    width: 50px;
+
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: rgb(74, 109, 167);
+    z-index: 2;
+
+    transition-duration: 200ms;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.jw_search_btn:hover {
+    background-color: rgb(64, 96, 148);
+    cursor: pointer;
+}
+
+.jw_magn_icon {
+    height: 20px;
+    width: auto;
+    z-index: 2;
+}
+
+.jw_placeholder {
+    height: fit-content;
+    width: 100%;
+    z-index: 2;
+
+    background-image: url("../images/jw_banner_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.jw_banner_logo {
+    position: absolute;
+    height: 75px;
+    width: auto;
+    margin-left: 25px;
+    top: 0;
+    left: 0;
+    image-rendering: optimizeSpeed;
+
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+
+.jw_banner {
+    height: 40px;
+    width: 100%;
+    margin-top: 16px;
+
+    background-color: rgb(55, 52, 51);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.jw_link_btn {
+    height: 100%;
+    width: 95px;
+    margin-left: 7.5px;
+
+    border: none;
+    border-radius: 0 0;
+
+    background-color: rgb(55, 52, 51);
+    color: white;
+
+    transition-duration: 200ms;
+}
+
+.jw_link_btn:hover {
+    background-color: rgb(15, 14, 13);
+    cursor: pointer;
+}
+
+.jw_placeholder_banner {
+    height: 100%;
+    width: 95px;
+}
+
+.jw_placeholder_h {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 155px;
+    width: 240px;
+    color: rgb(247, 247, 247);
+    text-shadow: rgba(0, 0, 0, 0.78) 0 0 5px;
+}
+
+.jw_placeholder_p {
+    height: auto;
+    width: 150px;
+    margin-left: 25px;
+    margin-right: 245px;
+
+    color: rgb(247, 247, 247);
+    text-shadow: rgba(0, 0, 0, 0.8) 0 0 5px;
+}
+
+.jw_placeholder_btn {
+    height: 35px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 315px;
+
+    border: none;
+    background-color: rgb(74, 109, 167);
+    font-size: 20px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+
+    transition-duration: 200ms;
+}
+
+.jw_placeholder_btn:hover {
+    background-color: rgb(64, 96, 148);
+    cursor: pointer;
+}

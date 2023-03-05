@@ -1,0 +1,104 @@
+.tagesschau_widget {
+    position: absolute;
+    height: 320px;
+    width: fit-content;
+    min-width: 480px;
+    background-color: rgba(59, 59, 59, 255);
+    border-radius: 10px 10px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+    color: azure;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.tagesschau_widget::-webkit-scrollbar {
+    display: none;
+}
+
+.tagesschau_widget_balken {
+    height: 25px;
+    width: 480px;
+    min-width: 480px;
+    padding-left: 3px;
+    background-color: rgb(32, 32, 32);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+}
+
+.tagesschau_widget_main {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.img_tagesschau {
+    height: 20px;
+    width: auto;
+    margin-right: 3px;
+    transform: scale(0.8);
+}
+
+.ts-image {
+    display: none;
+}
+
+.m-four {
+    display: none;
+}
+
+.columns {
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 10px 10px;
+    background-color: rgba(43, 43, 43);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 450px;
+    padding: 5px;
+    margin: 15px;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.label--small {
+    background-color: rgba(1, 89, 153, 255);
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 4px 4px;
+}
+
+.teaser__label {
+    margin-bottom: 3px;
+    margin-top: 4px;
+    text-decoration: none;
+}
+
+.teaser__link {
+    text-decoration: none;
+    color: azure;
+}
+
+.teaser__headline-wrapper {
+    text-decoration: underline;
+}
+
+.wid_tagesschau_close {
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+
+    background-color: rgb(255, 96, 90);
+    border: rgb(255, 96, 90);
+    border-radius: 100% 100%;
+    color: rgb(231, 184, 184);
+}
+
+.tagesschau_balken_p {
+    width: 435px;
+}
