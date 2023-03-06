@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,59 @@
     <title>Welcome to lucapleger.com!</title>
     <link rel="stylesheet" href="style/main.css">
 </head>
+
 <body>
-    
+    <canvas id="main_background">
+
+    </canvas>
+
+    <main onscroll="arrowdisappear()">
+        <div class="main_content">
+            <div class="main_header">
+                <h3 class="main_h3">All of my projects online</h3>
+                <h1 class="main_h1">Lucas projects</h1>
+            </div>
+            <div class="main_button_div">
+                <button class="button button_main" onclick="getprojects()">
+                    Explore
+                </button>
+            </div>
+        </div>
+
+        <div class="main_projects_prev" title="New Tab project (lucapleger.com/newtab)">
+            <img src="images/newtab_prev.png" alt="newtab_prev" class="img_main_proj">
+        </div>
+    </main>
+
+    <div class="header">
+        <div class="title">
+            <h1 class="header_h1">Luca</h1>
+            <h2 class="header_h2">.com</h2>
+            <h1 class="header_h1 header_h1_pl">Pleger</h1>
+        </div>
+
+        <div class="buttons_div_header">
+            <button class="button button_header" style="background-color: rgb(255, 255, 255);
+            color: rgb(3, 21, 49);" onclick="gethome()">
+                Home
+            </button>
+            <button class="button button_header" onclick="getprojects()">
+                Projects
+            </button>
+            <button class="button button_header" onclick="getabout()">
+                About
+            </button>
+            <button class="button button_header" onclick="getgithub()">
+                GitHub
+            </button>
+        </div>
+    </div>
+
+    <foote id="footer">
+        <img src="images/down-arrow.png" alt="" class="footer_down-arrow">
+    </footer>
 </body>
+
 <script src="scripts/main.js"></script>
+
 </html>
