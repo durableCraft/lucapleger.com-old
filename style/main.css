@@ -28,6 +28,39 @@
     }
 }
 
+@keyframes notification {
+    0% {
+        transform: scaleY(0);
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    5% {
+        transform: scaleX(0.8);
+        opacity: 0;
+    }
+    10% {
+        transform: scaleY(1);
+        transform: scaleX(0.8);
+        opacity: 0;
+    }
+    15% {
+        transform: scaleY(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    90% {
+        transform: scaleY(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleY(0);
+        transform: scaleX(0);
+        opacity: 0;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
@@ -43,8 +76,8 @@
 html body {
     height: 100vh;
     width: 100%;
-    min-height: 100vh;
-    min-width: 100%;
+    min-height: 607px;
+    min-width: 1005px;
 }
 
 body {
@@ -59,7 +92,7 @@ body {
     width: 100%;
     min-height: 100%;
     min-width: 100%;
-    position: absolute;
+    position: fixed;
 
     background: transparent;
     z-index: 0;
@@ -144,6 +177,9 @@ body {
     height: 40px;
     width: 120px;
 
+    min-height: 40px;
+    min-width: 120px;
+
     border: none;
     border-radius: 20px 20px;
     font-size: 19px;
@@ -174,7 +210,7 @@ main {
 
     box-shadow: inset 0 -80px 80px -80px #00000080;
 
-    position: absolute;
+    position: fixed;
 
     overflow: scroll visible;
     overflow-x: hidden;
@@ -218,7 +254,7 @@ main {
     width: 800px;
 
     margin: 40px;
-    margin-top: 200px;
+    margin-top: 21vh;
 
     display: flex;
     flex-wrap: wrap;
@@ -228,6 +264,8 @@ main {
 
 .main_h1 {
     font-size: 100px;
+
+    text-align: center;
 }
 
 .main_h3 {
@@ -269,7 +307,7 @@ main {
     width: calc(100vw - 300px);
     height: fit-content;
 
-    margin-top: 700px;
+    margin-top: 70vh;
     margin-bottom: 50px;
 
     background-color: rgba(32,33,36,255);
@@ -307,4 +345,60 @@ main {
     margin: 10px;
 
     animation: arrowbounce 2500ms infinite ease-in-out;
+}
+
+#notification {
+    display: none;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    margin: 10px;
+
+    opacity: 0;
+
+    height: 70px;
+    width: 300px;
+
+    border-radius: 14px 14px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+
+    background-color: rgba(30,30,30, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    color: white;
+
+    animation: notification 5s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    animation-play-state: paused;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#notification_ico {
+    height: 50px;
+    width: auto;
+
+    margin: 10px;
+}
+
+#notification_msg {
+    width: 230px;
+    height: 70px;
+    padding: 10px;
+
+    font-size: 15px;
+
+    color: lightgray;
+
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    justify-items: flex-start;
 }

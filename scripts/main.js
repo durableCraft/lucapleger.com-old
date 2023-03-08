@@ -1,5 +1,92 @@
 /* Main JS for lucapleger.com */
 
+/* Initial Check for window size */
+if (window.innerHeight <= 607) {
+    document.getElementById("footer").style.opacity = 0;
+
+    document.getElementById("notification_msg").innerHTML = "Please mind window-size for best experience!"
+    document.getElementById("notification").style.display = "flex";
+    document.getElementById("notification").style.animationPlayState = "running";
+
+    setTimeout(() => {
+        document.getElementById("notification").style.display = "none";
+        document.getElementById("notification").style.animationPlayState = "paused";
+    }, 5100);
+} else {
+    document.getElementById("footer").style.opacity = 1;
+}
+
+if (window.innerWidth <= 1005) {
+    document.getElementById("notification_msg").innerHTML = "Please mind window-size for best experience!"
+    document.getElementById("notification").style.display = "flex";
+    document.getElementById("notification").style.animationPlayState = "running";
+
+    document.getElementById("btn_about").style.opacity = 0;
+    document.getElementById("btn_github").style.opacity = 0;
+
+    setTimeout(() => {
+        document.getElementById("notification").style.display = "none";
+        document.getElementById("notification").style.animationPlayState = "paused";
+    }, 5100);
+
+    setTimeout(() => {
+        document.getElementById("btn_about").style.display = "none";
+        document.getElementById("btn_github").style.display = "none";
+    }, 400);
+} else {
+    document.getElementById("btn_about").style.opacity = 1;
+    document.getElementById("btn_github").style.opacity = 1;
+
+    setTimeout(() => {
+        document.getElementById("btn_about").style.display = "block";
+        document.getElementById("btn_github").style.display = "block";
+    }, 400);
+}
+
+window.addEventListener("resize", function dimensionchanges() {
+    if (window.innerHeight <= 607) {
+        document.getElementById("footer").style.opacity = 0;
+
+        document.getElementById("notification_msg").innerHTML = "Please mind window-size for best experience!"
+        document.getElementById("notification").style.display = "flex";
+        document.getElementById("notification").style.animationPlayState = "running";
+
+        setTimeout(() => {
+            document.getElementById("notification").style.display = "none";
+            document.getElementById("notification").style.animationPlayState = "paused";
+        }, 5100);
+    } else {
+        document.getElementById("footer").style.opacity = 1;
+    }
+
+    if (window.innerWidth <= 1005) {
+        document.getElementById("notification_msg").innerHTML = "Please mind window-size for best experience!"
+        document.getElementById("notification").style.display = "flex";
+        document.getElementById("notification").style.animationPlayState = "running";
+
+        document.getElementById("btn_about").style.opacity = 0;
+        document.getElementById("btn_github").style.opacity = 0;
+
+        setTimeout(() => {
+            document.getElementById("notification").style.display = "none";
+            document.getElementById("notification").style.animationPlayState = "paused";
+        }, 5100);
+
+        setTimeout(() => {
+            document.getElementById("btn_about").style.display = "none";
+            document.getElementById("btn_github").style.display = "none";
+        }, 400);
+    } else {
+        document.getElementById("btn_about").style.opacity = 1;
+        document.getElementById("btn_github").style.opacity = 1;
+
+        setTimeout(() => {
+            document.getElementById("btn_about").style.display = "block";
+            document.getElementById("btn_github").style.display = "block";
+        }, 400);
+    }
+});
+
 /* Stars generating */
 function randomInt(max) {
     return Math.floor(Math.random() * max);
@@ -53,7 +140,7 @@ const ctx = canvas.getContext("2d");
 canvas.width = width;
 canvas.height = height;
 
-render(); 
+render();
 
 /* Fadeout animation */
 
@@ -94,3 +181,16 @@ function getgithub() {
 function arrowdisappear() {
     document.getElementById("footer").style.opacity = 0;
 }
+
+document.getElementById("main_content").addEventListener("wheel", function scrollatbottom() {
+    console.log("scrolling here");
+    document.getElementById("notification_msg").innerHTML = "Scroll with your mouse located on image, to see it in total.";
+    document.getElementById("notification").style.display = "flex";
+    document.getElementById("notification").style.animationPlayState = "running";
+
+    setTimeout(() => {
+        document.getElementById("notification").style.display = "none";
+        document.getElementById("notification").style.animationPlayState = "paused";
+    }, 5100);
+});
+

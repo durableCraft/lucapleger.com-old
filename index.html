@@ -15,8 +15,8 @@
     </canvas>
 
     <main onscroll="arrowdisappear()">
-        <div class="main_content">
-            <div class="main_header">
+        <div class="main_content" id="main_content">
+            <div class="main_header" id="main_header">
                 <h3 class="main_h3">All of my projects online</h3>
                 <h1 class="main_h1">Lucas projects</h1>
             </div>
@@ -47,18 +47,25 @@
             <button class="button button_header" onclick="getprojects()">
                 Projects
             </button>
-            <button class="button button_header" onclick="getabout()">
+            <button class="button button_header" id="btn_about" onclick="getabout()">
                 About
             </button>
-            <button class="button button_header" onclick="getgithub()">
+            <button class="button button_header" id="btn_github" onclick="getgithub()">
                 GitHub
             </button>
         </div>
     </div>
 
-    <foote id="footer">
+    <footer id="footer">
         <img src="images/down-arrow.png" alt="" class="footer_down-arrow">
     </footer>
+
+    <div id="notification">
+        <img src="images/info.png" alt="" id="notification_ico">
+        <div id="notification_msg">
+
+        </div>
+    </div>
 </body>
 
 <script src="scripts/main.js"></script>
