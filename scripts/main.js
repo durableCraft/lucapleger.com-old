@@ -180,6 +180,9 @@ function getgithub() {
 
 function arrowdisappear() {
     document.getElementById("footer").style.opacity = 0;
+    setTimeout(() => {
+        document.getElementById("footer").style.display = "none";
+    }, 1000);
 }
 
 document.getElementById("main_content").addEventListener("wheel", function scrollatbottom() {
@@ -194,3 +197,6 @@ document.getElementById("main_content").addEventListener("wheel", function scrol
     }, 5100);
 });
 
+function scrolldown() {
+    document.getElementById("main").scrollBy({ top: 500, left: 0, behavior: "smooth" })
+}

@@ -331,7 +331,11 @@ main {
     position: fixed;
 
     height: fit-content;
-    width: 100vw;
+    width: fit-content;
+
+    left: calc(50vw - 50px);
+
+    cursor: pointer;
 
     display: flex;
     flex-wrap: wrap;
