@@ -1,4 +1,4 @@
-/* Main JS for lucapleger.com */
+/* Main JS for lucapleger.com/projects */
 
 /* Initial Check for window size */
 dimensionchanges();
@@ -129,15 +129,15 @@ function triggerfadeout() {
 }
 
 function gethome() {
-    /* Nothing should happten because you are at home page */
-}
-
-function getprojects() {
     triggerfadeout()
 
     setTimeout(() => {
-        window.location.href = "projects/";
+        window.location.href = "../";
     }, 1800);
+}
+
+function getprojects() {
+    /* Nothing should happten because you are at projects page */
 }
 
 function getabout() {
@@ -164,18 +164,6 @@ function arrowdisappear() {
         document.getElementById("footer").style.display = "none";
     }, 1000);
 }
-
-document.getElementById("main_content").addEventListener("wheel", function scrollatbottom() {
-    console.log("scrolling here");
-    document.getElementById("notification_msg").innerHTML = "Scroll with your mouse located on image, to see it in total.";
-    document.getElementById("notification").style.display = "flex";
-    document.getElementById("notification").style.animationPlayState = "running";
-
-    setTimeout(() => {
-        document.getElementById("notification").style.display = "none";
-        document.getElementById("notification").style.animationPlayState = "paused";
-    }, 5100);
-});
 
 function scrolldown() {
     document.getElementById("main").scrollBy({ top: 500, left: 0, behavior: "smooth" })

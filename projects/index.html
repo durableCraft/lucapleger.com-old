@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - lucapleger.com</title>
+    <link rel="stylesheet" href="style/main.css">
+    <meta name="description" content="official projects website from Luca Pleger.">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="luca, pleger, newtab, projects, mac, projects">
+</head>
+
+<body>
+    <canvas id="main_background">
+
+    </canvas>
+
+    <main onscroll="arrowdisappear()" id="main">
+        <div class="main_content" id="main_content">
+            <div class="main_prev_win" id="main_prev_1">
+                <div id="main_prev_1_img" class="main_prev_img" style="background-image: url('images/newtab_prev.png');">
+
+                </div>
+                <div class="main_prev_p">
+                    <h1 class="main_head">New Tab Page</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi a officia modi animi quam rem soluta quos obcaecati doloribus ratione, earum officiis atque tempora adipisci hic error deleniti optio?
+                    </p>
+                </div>
+                <a href="http://lucapleger.com/projects/newtab/" class="main_prev_link">Read more...</a>
+            </div>
+            <div class="main_prev_win" id="main_prev_2">
+                <div id="main_prev_2_img" class="main_prev_img" style="background-image: url('images/macpro_prev.jpeg');">
+                   
+                </div>
+                <div class="main_prev_p">
+                    <h1 class="main_head">Mac Pro 1,1 ATX Mod</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sapiente quibusdam est pariatur natus quia blanditiis officia molestiae fugiat saepe praesentium, optio maxime necessitatibus assumenda odio sint laudantium nobis minus!
+                    </p>
+                </div>
+                <a href="http://lucapleger.com/projects/macpro/" class="main_prev_link">Read more...</a>
+            </div>
+        </div>
+    </main>
+
+    <div class="header">
+        <div class="title_box_left">
+            <div class="title">
+                <h1 class="header_h1">Luca</h1>
+                <h2 class="header_h2">.com</h2>
+                <h1 class="header_h1 header_h1_pl">Pleger</h1>
+            </div>
+        </div>
+
+        <div class="title_box_right">
+            <div class="buttons_div_header" id="buttons_div_header">
+                <button class="button button_header"  onclick="gethome()">
+                    Home
+                </button>
+                <button class="button button_header" style="background-color: rgb(255, 255, 255);
+                color: rgb(3, 21, 49);" onclick="getprojects()">
+                    Projects
+                </button>
+                <button class="button button_header" id="btn_about" onclick="getabout()">
+                    About
+                </button>
+                <button class="button button_header" id="btn_github" onclick="getgithub()">
+                    GitHub
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" onclick="scrolldown()">
+        <img src="images/down-arrow.png" alt="" class="footer_down-arrow">
+    </footer>
+
+    <div id="notification">
+        <img src="images/info.png" alt="" id="notification_ico">
+        <div id="notification_msg">
+
+        </div>
+    </div>
+</body>
+
+<script src="scripts/main.js"></script>
+
+</html>

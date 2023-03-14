@@ -20,9 +20,11 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -34,20 +36,24 @@
         transform: scaleX(0);
         opacity: 0;
     }
+
     5% {
         transform: scaleX(0.8);
         opacity: 0;
     }
+
     10% {
         transform: scaleY(1);
         transform: scaleX(0.8);
         opacity: 0;
     }
+
     15% {
         transform: scaleY(1);
         transform: scaleX(1);
         opacity: 1;
     }
+
     90% {
         transform: scaleY(1);
         transform: scaleX(1);
@@ -160,7 +166,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.header_h1_pl{
+
+.header_h1_pl {
     margin-bottom: 10px;
 }
 
@@ -214,6 +221,7 @@ body {
     transition-delay: 50ms;
     animation: cubic-bezier(.53, .04, .83, .5);
 }
+
 .button:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(3, 21, 49);
@@ -233,7 +241,7 @@ main {
 
     position: fixed;
 
-    overflow: scroll visible;
+    overflow-y: scroll;
     overflow-x: hidden;
 
     display: flex;
@@ -243,24 +251,24 @@ main {
 
 ::-webkit-scrollbar {
     width: 6px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #ffffff00; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #5050505e; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5050505e;
     border-radius: 3px 3px;
-  }
+}
 
 .main_content {
     height: fit-content;
     width: 100vw;
-    position: fixed;
     z-index: 0;
+    margin-bottom: 30px;
 
     border-radius: 20px 20px;
 
@@ -270,82 +278,82 @@ main {
     align-items: flex-start;
 }
 
-.main_header {
+.main_prev_win {
     height: fit-content;
-    width: 800px;
-
-    margin: 40px;
-    margin-top: 21vh;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.main_h1 {
-    font-size: 100px;
-
-    text-align: center;
-}
-
-.main_h3 {
-    font-size: 30px;
-    color: rgba(255, 255, 255, 0.65);
-}
-
-.main_button_div {
-    width: 100vw;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.button_main {
-    height: 60px;
-    width: 180px;
-
-    border-radius: 30px 30px;
-    font-size: 25px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    background-color: rgb(255, 255, 255);
-    color: rgb(3, 21, 49);
-
-    transition-duration: 400ms;
-    transition-delay: 50ms;
-    animation: cubic-bezier(.53, .04, .83, .5);
-}
-.button_main:hover {
-   scale: 1.1;
-}
-
-.main_projects_prev {
     width: calc(100vw - 16vw);
-    height: fit-content;
+    margin-top: 30px;
 
-    margin-top: 70vh;
-    margin-bottom: 50px;
-
-    background-color: rgba(32,33,36,255);
+    background-color: rgba(32, 33, 36, 255);
     border-radius: 10px 10px;
 
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 
-    cursor: all-scroll;
+    transition-duration: 300ms;
+}
+.main_prev_win:hover {
+    scale: 1.01;
+}
+
+.main_prev_img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    height: 250px;
+    width: 100%;
+
+    background: rgb(253, 253, 254);
+    background: linear-gradient(135deg, rgba(253, 253, 254, 1) 0%, rgba(166, 170, 183, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_prev_p {
+    min-height: 400px;
+    height: fit-content;
+    width: 100%;
+
+    padding: 30px;
+
+    box-shadow: 0 -20px 20px -20px rgba(0, 0, 0, 0.8);
+    color: white;
+    text-decoration: none;
+    font-size: large;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
-.img_main_proj {
-    width: calc(100vw - 16vw);
+
+.main_head {
+    color: white;
+    margin-bottom: 30px;
 }
+
+.main_prev_link {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    height: fit-content;
+    width: 100%;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+
+
+/* Footer */
 
 #footer {
     bottom: 0;
@@ -389,7 +397,7 @@ main {
     border-radius: 14px 14px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
 
-    background-color: rgba(30,30,30, 0.8);
+    background-color: rgba(30, 30, 30, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 
