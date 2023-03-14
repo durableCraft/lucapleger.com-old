@@ -329,6 +329,9 @@ main {
 .main_head {
     color: white;
     margin-bottom: 30px;
+
+    width: 100%;
+    height: auto;
 }
 
 .main_prev_link {
