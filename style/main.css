@@ -168,6 +168,8 @@ body {
     height: 22px;
     font-size: 25px;
 
+    transform: translateX(2px);
+
     color: rgba(255, 255, 255, 0.65);
 
     display: flex;
